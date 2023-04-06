@@ -9,6 +9,8 @@ import '@/styles/globals.sass'
 import '@/styles/Navbar.sass'
 import '@/styles/Footer.sass'
 import '@/styles/Home.sass'
+import '@/styles/Sobre.sass'
+import '@/styles/Contact.sass'
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {

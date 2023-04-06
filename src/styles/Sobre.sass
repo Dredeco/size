@@ -1,0 +1,41 @@
+@use 'variables'
+    
+.about
+    width: 100%
+    padding: 2rem 0
+    display: flex
+    .container
+        text-align: center
+        h1
+            margin-bottom: 2rem
+            text-transform: uppercase
+        .about-wrapper
+            display: flex
+            position: relative
+            flex-wrap: wrap
+            align-items: center
+            justify-content: center
+            .about-image
+            .about-text
+                display: flex
+                flex-direction: column
+                span
+                a
+                    background-color: variables.$Vermelho
+                    padding: .8rem 1.4rem
+                    text-transform: uppercase
+                    text-decoration: none
+                    color: #fff
+                    font-weight: 700
+                    border-radius: 10px
+                    font-size: 1.2rem
+
+@media screen and ( min-width: 992px )
+    .about-image
+        width: 50%
+        img
+            border-radius: 20px !important
+            min-height: 400px !important
+    .about-text
+        width: 50%
+    
