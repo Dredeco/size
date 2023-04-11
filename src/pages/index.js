@@ -7,8 +7,8 @@ export default function Home() {
     <>
       <main className="main">
         <div className="container">
-          <h1>Soluções mecânicas <span>personalizadas</span> para seus desafios.</h1>
-          <h4>Engenharia de precisão e inovação para projetos mecânicos sob medida.</h4>
+          <h1>Serviços especializados em engenharia e soluções para a indústria com a <span>SIZE</span>.</h1>
+          <h4>Descubra nossos serviços com base em princípios que valorizam nossos clientes, funcionários e a comunidade.</h4>
           <Link href='/Sobre'>conheça a nossa empresa</Link>
         </div>
       </main>
