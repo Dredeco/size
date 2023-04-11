@@ -59,7 +59,7 @@ export default function Sobre() {
 
         <div className='cta'>
             <span>Ficou interessado em nossos serviços?</span>
-            <Link href='/Projetos'>VEJA AQUI NOSSOS PROJETOS</Link>
+            <Link href='/Servicos'>VEJA AQUI NOSSOS SERVIÇOS</Link>
         </div>
 
       </div>

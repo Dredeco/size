@@ -7,7 +7,7 @@ import Logo from './../../public/logo.png'
 export default function Navbar() {
   return (
     <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
+        <div class="container">
             <Link class="navbar-brand" href="/">
                 <Image 
                     className='logo'
@@ -33,7 +33,7 @@ export default function Navbar() {
                     <div class="navbar-nav ms-auto">
                         <Link class="nav-link active" aria-current="page" href="/">Início</Link>
                         <Link class="nav-link" href="/Sobre">Sobre</Link>
-                        <Link class="nav-link" href="/Projetos">Projetos</Link>
+                        <Link class="nav-link" href="/Servicos">Serviços</Link>
                         <Link class="nav-link" href="/Contato">Contato</Link>
                     </div>
                 </div>
