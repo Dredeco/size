@@ -10,8 +10,8 @@ export default function Contato() {
 
   return (
   <div className='contact'>
-      <h1>Contato</h1>
       <div className='container'>
+      <h1>Contato</h1>
       <div className='contact-wrapper'>
 
           <form className='contact-form' onSubmit={submit}>

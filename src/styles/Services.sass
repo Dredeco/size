@@ -16,18 +16,25 @@
             flex-wrap: wrap
             justify-content: center
             .service-card
-                background-color: variables.$Vermelho
                 margin: 1rem .5rem
                 display: flex
                 flex-direction: column
-                justify-content: space-between
                 align-items: center
                 border-radius: 20px
                 max-width: 369px
                 h3
+                    color: variables.$Branco
                     text-align: center
                     padding: 1rem
-                    padding-top: 1.4rem
+                    background-color: variables.$Vermelho
+                    width: 100%
+                    min-height: 100px
+                    margin-bottom: 0px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    border-top-left-radius: 20px
+                    border-top-right-radius: 20px
                 img
 
         .services-other
@@ -36,24 +43,35 @@
             flex-direction: column
             height: fit-content
             align-items: center
-            background-image: url("./../../public/oficina.jpg")
+            background-image: url("./../../public/desenho1.jpg")
             background-position: center
             background-size: cover
             border-radius: 20px
             h3
                 display: inline-block
                 font-weight: 700
+                color: variables.$Preto-puro
             .other-text
                 display: flex
                 flex-wrap: wrap
                 justify-content: center
+                text-align: center
                 span
                     margin: .5rem 1rem
                     font-weight: 600
                     font-size: 1.2rem
-                    background-color: variables.$Branco
-                    color: #404040
+                    background-color: variables.$Cinza-escuro
+                    color: #fff
                     padding: .7rem .5rem
+                    min-width: 300px
+                    max-width: 300px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    strong
+                        display: none
+                        margin-right: .5rem
+                        color: variables.$Vermelho
 
         .cta
             background-color: variables.$Vermelho
