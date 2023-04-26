@@ -4,7 +4,6 @@ import Head from 'next/head'
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-import "bootstrap/dist/css/bootstrap.min.css"; // Import bootstrap CSS
 import '@/styles/globals.sass'
 import '@/styles/Navbar.sass'
 import '@/styles/Footer.sass'
@@ -12,6 +11,8 @@ import '@/styles/Home.sass'
 import '@/styles/Sobre.sass'
 import '@/styles/Contact.sass'
 import '@/styles/Services.sass'
+
+import "bootstrap/dist/css/bootstrap.min.css"; // Import bootstrap CSS
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {

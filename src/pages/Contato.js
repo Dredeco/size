@@ -29,8 +29,7 @@ export default function Contato() {
               <FaPhone /><strong>Telefone:</strong><p>(22) XXXXX-XXXX</p><br />
               <GrMail /><strong>E-mail:</strong><p>comercialsize@gmail.com</p><br />
               <FaMapMarkerAlt /><strong>Localização:</strong><p>Rua Abílio Moreira de Miranda Nº 45, sala 1002 - Imbetiba, Macaé/RJ</p><br />
-              <FaClock /><strong>Horário de Atendimento:</strong><p>De segunda a sexta, das 9h às 17h.</p><br />
-              <strong>Redes sociais</strong><p><Link href='https://facebook.com' target='_blank'><FaFacebook /></Link><Link href='https://instagram.com' target='_blank'><FaInstagram /></Link></p><br />
+              <FaClock /><strong>Horário de Atendimento:</strong><p>De Segunda à Sexta, das 8h às 17:30h</p><br />
           </div>
 
       </div>
