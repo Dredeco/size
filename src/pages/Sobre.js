@@ -1,16 +1,17 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/legacy/image'
+import {TbHexagonNumber1, TbHexagonNumber2, TbHexagonNumber3, TbHexagonNumber4, TbHexagonNumber5, TbChevronsRight} from 'react-icons/tb'
 
 import banner from './../../public/mecanico.jpg'
 
 export default function Sobre() {
   let pilares = [
-    {name: "Conhecimento técnico", description: "Visamos fornecer a nossos clientes conhecimento especializado e experiência em áreas como projeto, construção e fabricação"},
-    {name: "Soluções de alta qualidade", description: "Nos esforçamos para fornecer soluções de alta qualidade que atendam às necessidades de nossos clientes, respeitando os padrões e regulamentos do setor."},
-    {name: "Segurança e confiabilidade ", description: "Trabalhamos para garantir que as soluções sejam seguras e confiáveis e que cumpram todos os padrões e regulamentos de segurança relevantes."},
-    {name: "Aumente a eficiência e a produtividade ", description: "Otimizamos os processos de fabricação e/ou projetamos produtos mais eficientes para ajudar os clientes a reduzir custos, aumentar a produtividade e melhorar seus resultados."},
-    {name: "Prazos e orçamentos do projeto ", description: "Nos desafiamos em concluir os projetos no prazo e dentro do orçamento, ao mesmo tempo em que oferecemos soluções de alta qualidade que atendem às necessidades do cliente."}
+    {icon: <TbHexagonNumber1 />, name: "Conhecimento técnico", description: "Visamos fornecer a nossos clientes conhecimento especializado e experiência em áreas como projeto, construção e fabricação"},
+    {icon: <TbHexagonNumber2 />,name: "Soluções de alta qualidade", description: "Nos esforçamos para fornecer soluções de alta qualidade que atendam às necessidades de nossos clientes, respeitando os padrões e regulamentos do setor."},
+    {icon: <TbHexagonNumber3 />,name: "Segurança e confiabilidade", description: "Trabalhamos para garantir que as soluções sejam seguras e confiáveis e que cumpram todos os padrões e regulamentos de segurança relevantes."},
+    {icon: <TbHexagonNumber4 />,name: "Aumente a eficiência e a produtividade", description: "Otimizamos os processos de fabricação e/ou projetamos produtos mais eficientes para ajudar os clientes a reduzir custos, aumentar a produtividade e melhorar seus resultados."},
+    {icon: <TbHexagonNumber5 />,name: "Prazos e orçamentos do projeto", description: "Nos desafiamos em concluir os projetos no prazo e dentro do orçamento, ao mesmo tempo em que oferecemos soluções de alta qualidade que atendem às necessidades do cliente."}
   ]
 
   let valores = [
@@ -29,7 +30,7 @@ export default function Sobre() {
 
         <div className='about-text'>
             <span >
-            A SIZE é uma empresa que visa fornecer serviços técnicos especializados em engenharia e soluções em variados setores da indústria. <br /><br />
+            A <strong>SIZE</strong> é uma empresa que visa fornecer serviços técnicos especializados em engenharia e soluções em variados setores da indústria. <br /><br />
             Nos propomos a oferecer serviços como design de produtos, design de processos de fabricação, gerenciamento de projetos, gerenciamento de construção e consultoria. <br /><br />
             <strong>Nosso principal objetivo é ajudar os clientes a atingir seus objetivos, nos apoiando nos 5 pilares, que são:</strong>
             </span><br />
@@ -38,11 +39,12 @@ export default function Sobre() {
         <div className='about-pilars'>
           {pilares.map((pilar) => (
             <div key={pilar.name} className='about-pilar-card'>
-              <h3>{pilar.name}</h3>
-              <span>{pilar.description}</span>
+              <span><strong>{pilar.icon} {pilar.name}: </strong>{pilar.description}</span>
             </div>
           ))}
         </div>
+
+        <div className='line' />
 
         <div className='about-values'>
             <h1>Valores</h1>
@@ -50,16 +52,15 @@ export default function Sobre() {
             <div className='values-wrapper'>
               {valores.map((valor) => (
                 <div key={valor.name} className='value-card'>
-                  <h4>{valor.name}</h4>
-                  <span>{valor.description}</span>
+                  <span><strong><TbChevronsRight /> {valor.name}: </strong>{valor.description}</span>
                 </div>
               ))}
             </div>
         </div>
 
         <div className='cta'>
-            <span>Ficou interessado em nossos serviços?</span>
-            <Link href='/Servicos'>VEJA AQUI NOSSOS SERVIÇOS</Link>
+            <span>Ficou interessado em CONHECER <br />nossos serviços?</span>
+            <Link href='/Servicos'>SAIBA MAIS</Link>
         </div>
 
       </div>

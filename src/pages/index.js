@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar'
 import Link from 'next/link'
 import {FaRegCircle, FaChevronLeft, FaChevronRight} from 'react-icons/fa'
 
-import Image3d from './../../public/3dmodel.jpg'
+import Image3d from './../../public/3dmodeling2.png'
 import desenho from './../../public/desenho1.jpg'
 import sms from './../../public/sms.png'
 import worker from './../../public/worker1.jpg'
@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <main className="main">
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"><FaRegCircle size={20} /></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"><FaRegCircle size={20} /></li>
