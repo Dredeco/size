@@ -1,16 +1,17 @@
 @use 'variables'
 
 .main
-    height: 90vh
+    height: 100vh
+    min-height: 100vh
     width: 100%
-    background-size: cover
-    background-position: center 
     display: flex
     justify-content: center
+    align-items: center
+    align-content: center
+    flex-direction: column
     background-color: #202020
-    z-index: -5
     *
-        font-size: 1.5rem
+        font-size: 1.2rem
     .carousel
         display: flex
         flex-direction: column
@@ -42,12 +43,15 @@
                     text-align: center
                     z-index: 5
                     h1
-                        z-index: 10
                         font-size: 2rem
                     p
-                        z-index: 10
+                    a
+                        text-decoration: none
+                        color: #202020
                 img
                     z-index: 1
+                    width: 100% !important
+                    height: 100% !important
         .carousel-indicators
             .active
                 svg
@@ -58,3 +62,28 @@
                     color: #fff
         .carousel-control-prev, .carousel-control-next
             z-index: 20
+
+    .cta
+        padding: 1rem .5rem
+        font-size: 1.5rem
+        display: flex
+        flex-direction: column
+        align-items: center
+        height: fit-content
+        text-align: center
+        color: #fff
+        z-index: 100
+        span
+            font-size: 1.7rem
+            margin-bottom: 1rem
+            font-weight: 600
+            text-transform: uppercase
+        a
+            background-color: variables.$Vermelho
+            padding: .8rem 1.4rem
+            text-transform: uppercase
+            text-decoration: none
+            color: variables.$Branco
+            font-weight: 700
+            border-radius: 10px
+            font-size: 1.2rem
