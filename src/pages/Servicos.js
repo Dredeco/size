@@ -1,33 +1,27 @@
 import React from 'react'
-import Image from 'next/legacy/image'
 import Link from 'next/link'
 
 import Image1 from './../../public/mecanico.jpg'
 
 export default function Servicos() {
   let services = [
-    {name: "Modelagem 3D", image: Image1},
-    {name: "Dimensionamento e Cálculo Estrutural", image: Image1},
-    {name: "Laudos e ART", image:Image1},
-    {name: "PMOC - Sistemas de HVAC e Ar Condicionado", image: Image1},
-    {name: "Gerenciamento de Cronograma Executivo", image: Image1},
-    {name: "Levantamento de Riscos Ocupacionais", image: Image1}
+    {data: 'flush-collapseOne', name: "Modelagem 3D", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat dictum tincidunt. Sed suscipit mollis metus. Cras dictum dui erat, ac fermentum tortor cursus ac."},
+    {data: 'flush-collapseTwo',name: "Dimensionamento e Cálculo Estrutural", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat dictum tincidunt. Sed suscipit mollis metus. Cras dictum dui erat, ac fermentum tortor cursus ac."},
+    {data: 'flush-collapseThree',name: "Laudos e ART", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat dictum tincidunt. Sed suscipit mollis metus. Cras dictum dui erat, ac fermentum tortor cursus ac."},
+    {data: 'flush-collapseFour',name: "PMOC - Sistemas de HVAC e Ar Condicionado", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat dictum tincidunt. Sed suscipit mollis metus. Cras dictum dui erat, ac fermentum tortor cursus ac."},
+    {data: 'flush-collapseFive',name: "Gerenciamento de Cronograma Executivo", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat dictum tincidunt. Sed suscipit mollis metus. Cras dictum dui erat, ac fermentum tortor cursus ac."},
+    {data: 'flush-collapseSix',name: "Levantamento de Riscos Ocupacionais", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat dictum tincidunt. Sed suscipit mollis metus. Cras dictum dui erat, ac fermentum tortor cursus ac."}
   ]
 
   return (
     <div className='services'>
       <div className='container'>
         <h1>NOSSOS SERVIÇOS</h1>
-        <div className='services-wrapper'>
+        {/* <div className='services-wrapper'>
           {services.map((service) => (
             <div key={service.name} className='service-card'>
               <h3>{service.name}</h3>
-              <Image 
-                src={service.image}
-                width={370}
-                height={200}
-                alt={service.name}
-              />
+              <span>{service.description}</span>
             </div>
           ))}
         </div>
@@ -44,6 +38,21 @@ export default function Servicos() {
             <span><strong>♦</strong> Laudo de Para-Raios (NR10)</span>
             <span><strong>♦</strong> Identificação de Perigos e Avaliação de Riscos</span>
             </div>
+          </div> */}
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          {services.map((service) => (
+            <div class="accordion-item" key={service.name}>
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#${service.data}`} aria-expanded="false" aria-controls={`${service.data}`}>
+                  {service.name}
+                </button>
+              </h2>
+              <div id={`${service.data}`} class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">{service.description}</div>
+              </div>
+            </div>
+          ))}
         </div>
 
         <div className='cta'>

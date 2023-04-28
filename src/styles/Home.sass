@@ -9,6 +9,8 @@
     justify-content: center
     background-color: #202020
     z-index: -5
+    *
+        font-size: 1.5rem
     .carousel
         display: flex
         flex-direction: column
@@ -41,6 +43,7 @@
                     z-index: 5
                     h1
                         z-index: 10
+                        font-size: 2rem
                     p
                         z-index: 10
                 img
@@ -53,4 +56,5 @@
             li
                 svg
                     color: #fff
-    
+        .carousel-control-prev, .carousel-control-next
+            z-index: 20

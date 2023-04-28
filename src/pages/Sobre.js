@@ -1,9 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
-import Image from 'next/legacy/image'
 import {TbHexagonNumber1, TbHexagonNumber2, TbHexagonNumber3, TbHexagonNumber4, TbHexagonNumber5, TbChevronsRight} from 'react-icons/tb'
 
-import banner from './../../public/mecanico.jpg'
 
 export default function Sobre() {
   let pilares = [
@@ -47,7 +45,7 @@ export default function Sobre() {
         <div className='line' />
 
         <div className='about-values'>
-            <h1>Valores</h1>
+            <h1>Nossos Valores</h1>
             <span>Nos valoramos em princípios que moldam como conduzimos nossos negócios e interação com nossos clientes, funcionários e a comunidade em geral. Tais quais:</span>
             <div className='values-wrapper'>
               {valores.map((valor) => (
@@ -59,8 +57,8 @@ export default function Sobre() {
         </div>
 
         <div className='cta'>
-            <span>Ficou interessado em CONHECER <br />nossos serviços?</span>
-            <Link href='/Servicos'>SAIBA MAIS</Link>
+            <span>Saiba mais sobre os nossos serviços!</span>
+            <Link href='/Servicos'>ir para serviços</Link>
         </div>
 
       </div>
