@@ -1,6 +1,4 @@
 import Image from 'next/legacy/image'
-import Navbar from '@/components/Navbar'
-import Link from 'next/link'
 import {FaRegCircle, FaChevronLeft, FaChevronRight} from 'react-icons/fa'
 
 import Image3d from './../../public/3dmodel.jpg'

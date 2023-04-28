@@ -1,8 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 
-import Image1 from './../../public/mecanico.jpg'
-
 export default function Servicos() {
   let services = [
     {data: 'flush-collapseOne', name: "Modelagem 3D", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat dictum tincidunt. Sed suscipit mollis metus. Cras dictum dui erat, ac fermentum tortor cursus ac."},
