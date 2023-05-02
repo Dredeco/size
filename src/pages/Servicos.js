@@ -78,8 +78,8 @@ export default function Servicos() {
             <Link href='/Contato'>ENTRE EM CONTATO</Link>
         </div>
 
-        <div className='layer'>
-          <div className='logo-bg'>
+        <div className='logo_bg'>
+          <div className='layer'>
           </div>
         </div>
       </div>
