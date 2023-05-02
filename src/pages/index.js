@@ -2,7 +2,7 @@ import Image from 'next/legacy/image'
 import Link from 'next/link'
 import {FaRegCircle, FaChevronLeft, FaChevronRight} from 'react-icons/fa'
 
-import Image3d from './../../public/3dmodel.jpg'
+import Image3d from './../../public/3dmodel3.jpg'
 import desenho from './../../public/desenho1.jpg'
 import sms from './../../public/sms.png'
 import worker from './../../public/worker1.jpg'
