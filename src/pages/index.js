@@ -1,4 +1,3 @@
-import Image from 'next/legacy/image'
 import Link from 'next/link'
 import {FaRegCircle, FaChevronLeft, FaChevronRight} from 'react-icons/fa'
 
@@ -6,6 +5,7 @@ import Image3d from './../../public/3dmodel3.jpg'
 import desenho from './../../public/desenho1.jpg'
 import sms from './../../public/sms.png'
 import worker from './../../public/worker1.jpg'
+import Image from 'next/legacy/image'
 
 let sliders = [
   {name: 'Dimensionamento e cálculo estrutural', description: 'Serviço que envolve a análise e dimensionamento de estruturas para garantir que elas sejam fortes o suficiente para suportar cargas e condições ambientais específicas.', image: desenho},

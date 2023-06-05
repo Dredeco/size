@@ -1,8 +1,8 @@
 import React from 'react'
-import Image from 'next/legacy/image'
 import Link from 'next/link'
 
 import Logo from './../../public/logo.png'
+import Image from 'next/image'
 
 export default function Navbar() {
   return (
@@ -13,7 +13,7 @@ export default function Navbar() {
                     className='logo'
                     src={Logo}
                     width='75'
-                    height='60'
+                    height='65'
                 />
             </Link>
 
